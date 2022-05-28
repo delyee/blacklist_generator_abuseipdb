@@ -32,6 +32,7 @@ with open(options.path, "a") as f:
     if options.mode == "nginx":
         for ip in ips:
             f.write(NGINX_FORMAT.format(ip=ip))
+        f.write("allow all;  # blacklist_generator_abuseipdb\n")
 
     elif options.mode == "hosts.deny":
         for ip in ips:
