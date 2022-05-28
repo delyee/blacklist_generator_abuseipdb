@@ -33,4 +33,6 @@ HOSTS_DENY_FORMAT = "ALL: {ip}  # blacklist_generator_abuseipdb\n"
 ➜  blacklist_generator_abuseipdb git:(main) ✗ python3 main.py
 2022-05-28T15:30:38.060663+0300 success add 10000 ips
 
+➜  blacklist_generator_abuseipdb git:(main) ✗ systemctl reload nginx
+
 ```
